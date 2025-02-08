@@ -1,0 +1,14 @@
+<div class="container">
+    <app-navbar [username]="username" (logout)="onLogout()"></app-navbar>
+
+    <div class="todos">
+        <app-todo-item *ngFor="let todo of todos" [todo]="todo" (edit)="onEdit($event)"
+            (delete)="onDelete($event)"></app-todo-item>
+    </div>
+    <div class="todoBtn">
+        <button (click)="openModal()">Add</button>
+    </div>
+
+    <app-todo-modal *ngIf="showModal" [currTodo]="currTodo" (close)="closeModal()" (save)="onSave($event)" (create)="onCreate($event)">
+    </app-todo-modal>
+</div>

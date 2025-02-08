@@ -1,0 +1,29 @@
+.todo-item{
+    padding: 10px;    
+    border-radius: 10px;
+    background-color: rgb(94, 0, 218);
+    color: white;
+}
+
+h3{
+    margin: 10px;
+}
+
+p{
+    margin: 10px;
+}
+
+.btns{
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+    column-gap: 10px
+}
+
+
+.btns button{
+    padding: 4px 8px;
+    background-color: rgb(255, 187, 61);
+    border-radius: 10px;
+    cursor: pointer;
+}
